@@ -33,3 +33,5 @@ item = {
     'weather': data['weather'][0]['description'],
     'timestamp': datetime.utcnow().isoformat()
 }
+
+table.put_item(Item=item)
