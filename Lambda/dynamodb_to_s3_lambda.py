@@ -22,3 +22,9 @@ for key, value in new_image.items():
 from datetime import datetime
 
 file_name = f"weather-data/weather_{datetime.utcnow().timestamp()}.json"
+
+s3.put_object(
+    Bucket=BUCKET_NAME,
+    Key=file_name,
+    Body=json.dumps(data)
+)
