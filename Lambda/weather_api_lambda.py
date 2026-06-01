@@ -25,3 +25,11 @@ data['weather'][0]['description']
 from datetime import datetime
 
 datetime.utcnow().isoformat()
+
+item = {
+    'city': city,
+    'temperature': str(data['main']['temp']),
+    'humidity': str(data['main']['humidity']),
+    'weather': data['weather'][0]['description'],
+    'timestamp': datetime.utcnow().isoformat()
+}
