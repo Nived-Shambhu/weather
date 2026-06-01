@@ -18,3 +18,7 @@ data = {}
 
 for key, value in new_image.items():
     data[key] = list(value.values())[0]
+
+from datetime import datetime
+
+file_name = f"weather-data/weather_{datetime.utcnow().timestamp()}.json"
