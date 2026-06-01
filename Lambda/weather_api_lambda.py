@@ -21,3 +21,7 @@ data = response.json()
 data['main']['temp']
 data['main']['humidity']
 data['weather'][0]['description']
+
+from datetime import datetime
+
+datetime.utcnow().isoformat()
