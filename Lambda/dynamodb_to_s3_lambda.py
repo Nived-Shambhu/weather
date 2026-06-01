@@ -28,3 +28,6 @@ s3.put_object(
     Key=file_name,
     Body=json.dumps(data)
 )
+
+print("EVENT RECEIVED:", json.dumps(event))
+print("Uploaded:", file_name)
