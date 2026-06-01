@@ -17,3 +17,7 @@ url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}
 
 response = requests.get(url)
 data = response.json()
+
+data['main']['temp']
+data['main']['humidity']
+data['weather'][0]['description']
