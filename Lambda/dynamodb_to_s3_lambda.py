@@ -13,3 +13,8 @@ for record in event['Records']:
         pass
 
 new_image = record['dynamodb']['NewImage']
+
+data = {}
+
+for key, value in new_image.items():
+    data[key] = list(value.values())[0]
