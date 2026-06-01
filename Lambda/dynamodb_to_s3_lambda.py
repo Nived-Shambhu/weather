@@ -31,3 +31,8 @@ s3.put_object(
 
 print("EVENT RECEIVED:", json.dumps(event))
 print("Uploaded:", file_name)
+
+return {
+    'statusCode': 200,
+    'body': 'Success'
+}
